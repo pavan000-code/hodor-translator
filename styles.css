@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&family=Raleway:wght@600&family=Waiting+for+the+Sunrise&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1b37;
+}
+
+.pagewrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.navigation {
+    background-color: #392f57;
+    padding: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.nav-repo {
+    text-align: right;
+}
+
+.nav-link {
+    font-size: 2em;
+    color: #ffd900;
+}
+
+.nav-title {
+    color: #ffc48c;
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Indie Flower', cursive;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+    flex-grow: 1;
+}
+
+.content-title {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.content-title h3 {
+    color:#ffc48c;
+    font-family: 'Waiting for the Sunrise',sans-serif;
+    font-size: xx-large;
+}
+
+.content-translator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #00494d;
+    margin: 1rem;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: -4px 3px 19px 2px #ffd07b;
+    width: 80%;
+}
+
+.content-input {
+    flex: 33%;
+    background-color: #1d034a;
+    padding: 3rem 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.input {
+    text-align: left;
+    color: #5e7a7d;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+input {
+    width: 90%;
+    margin: 0.4rem;
+    padding: 0.3125rem 0.75rem;
+    background-color: #f4fafa;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: monospace;
+    color: #647609;
+    text-align: end;
+}
+
+.content-translate {
+    font-family: 'Raleway', sans-serif;
+    color: #f4fafa;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 15px;
+    height: 50px;
+    width: 120px;
+    background-color: #bb86fc;
+    box-shadow: 4px 4px #000000;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.output {
+    flex: 33%;
+    padding: 3rem 1rem;
+    background-color: #1d034a;
+    margin: 1rem;
+    color: #84721e;
+    border-radius: 10px;
+}
+#op{
+    color:#647609;
+}
+.footer {
+    background-color: #392f57;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-tagline {
+    text-align: center;
+    color: #ffc48c;
+    font-size: 1.1rem;
+    margin: 10px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.footer-socials {
+    list-style: none;
+    text-align: center;
+    margin: 0 0.5rem;
+}
+
+.footer-links {
+    text-decoration: none;
+}
+
+.footer-inline {
+    display: inline;
+    padding: 0 10px;
+}
+
+footer i {
+    font-size: 2em;
+    color: #ffd900;
+}
+
+@media screen and (max-width:991px) {
+    .content-translator {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        box-shadow: 0 0 !important;
+    }
+
+    .content-input,
+    .output {
+        margin: 1rem;
+    }
+
+    .action-center {
+        align-self: center;
+    }
+
+    input {
+        width: auto;
+        margin-left: 5px;
+        font-size: 1rem;
+    }
+}
